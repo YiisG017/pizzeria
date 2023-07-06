@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <title>CREDICOPPEL</title>
+</head>
+<body onload="calcular() " class="text-center">
+   
+    
+    <h1 class="bg-danger text-white m-5">PIZZAS CHESTER</h1>
+    <img src="pizza.jpg" width="175" alt="">
+    <div class="card m-5">
+    <h1 class=" bg-warning text-white ">TAMAÑO</h1>
+    <select class="form-control "name="tamaño" onchange="calcular()" id="tamaño">
+        <option value="individual">INDIVIDUAL</option>
+        <option value="grande">GRANDE</option>
+        <option value="familiar">FAMILIAR</option>
+        <option value="jumbo">JUMBO</option>
+
+    </select>
+    <div id="img"></div>
+    
+    
+    <h1 class="bg-info text-white">CANTIDAD</h1>
+    <input class="form-control "type="range" id="cantidad" value="0" min="1" max="10">
+    <label class="h2 "id="vcan">1</label>
+    
+    
+    <div class="m-2 ">
+      <h1 class="bg-success text-white">EXTRA</h1>
+    <input type="checkbox" name="m" id="refresco" class="form-check-input p-2 " onchange="calcular()">refresco
+    <input type="checkbox" name="m" id="alitas" class="form-check-input" onchange="calcular()" >alitas
+    <input type="checkbox" name="m" id="papas" class="form-check-input" onchange="calcular()" >papas
+    <h1 class="bg-success text-white">EXTRA</h1>
+    <input type="radio" name="m" id="uno" class="form-check-input p-2 " onchange="calcular()">1 INGREDIENTE
+    <input type="radio" name="m" id="dos" class="form-check-input" onchange="calcular()" >2 INGREDIENTES
+    <input type="radio" name="m" id="tres" class="form-check-input" onchange="calcular()" >3 INGREDIENTES
+    <div class="bg-primary text-white h1 "id="res">TOTAL: $ 0.00 MXN</div>
+
+    <script src="bootstrap.min.js"></script>
+    <script src="sweetalert2.all.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
